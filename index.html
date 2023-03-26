@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Iteration Statement</h1>
+    <h2>Question 1</h2>
+    <p>Find the number of digits</p>
+    <pre>
+        <b>Answer:</b>
+        const Find_Digits = (N) => 
+        {
+          
+                        const numStr = N.toString();
+                    
+                        
+                        let count = 0;
+                    
+                        
+                        for (const ch of numStr) {
+                            
+                            if (/[0-9]/.test(ch)) {
+                                count++;
+                            }
+                        }
+                    
+                        
+                        return count;
+        };
+    </pre>
+    <h2>Question 2</h2>
+    <p> Find the Fives</p>
+    <pre>
+        <b>Answer:</b>
+        const Find_Five = (N) => 
+        {
+             
+                        const numStr = N.toString();
+                    
+                        
+                        let count = 0;
+                    
+                        
+                        for (const ch of numStr) {
+                            
+                            if (ch == '5') {
+                                count++;
+                            }
+                        }
+                    
+                        
+                        return count;
+        };
+    </pre>
+    <h2>Question 3</h2>
+    <p> Find the Fives</p>
+    <pre>
+        <b>Answer:</b>
+        const findSum = (n) => {
+            let sum = 0;
+                        for(let i=1; i<=n; i++){
+                          if(i%2===0){
+                            sum = sum+i;
+                          }
+                        }
+                        return sum;
+        };
+    </pre>
+    <h2>Question 4</h2>
+    <p> Find the sum of the digits of a given number.</p>
+    <pre>
+    <b>Answer:</b>
+    const Number_Sum = (N) => 
+{
+	
+                const numStr = N.toString();
+            
+                
+                let sum = 0;
+                
+                for (const ch of numStr) {
+                   sum += Number(ch);
+                }
+            
+                return sum;
+};
+    </pre>
+    <h2>Question 5</h2>
+    <p> Find the sum of the digits of a given number.</p>
+    <pre>
+        <b>Answer:</b>
+        const Print_Odd = (N) => 
+        {
+             console.log("2"); 
+                    
+                      for (let i = 3; i <= N; i += 2) { 
+                        console.log(i);
+                      }
+        };
+    </pre>
+    <h2>Question 6</h2>
+    <p> Print the Odds.</p>
+    <pre>
+        <b>Answer:</b>
+        const Print_Odd = (N) => 
+{
+	 console.log("2"); 
+            
+              for (let i = 3; i <= N; i += 2) { 
+                console.log(i);
+              }
+};
+    </pre>
+    <h2>Question 7</h2>
+    <p> Print the Pattern.</p>
+    <pre>
+        <b>Answer:</b>
+        const Print_pattern = (N) => 
+        {
+        for(let i=0; i < N; i++){
+                        let row = "";
+                        for(let j=0; j<=i; j++){
+                          row += "*";
+                        }
+                        console.log(row);
+                      }
+        };
+    </pre>
+    <h2>Question 8</h2>
+    <p> Check whether a Number is a prime or not</p>
+    <pre>
+            <b>Answer:</b>
+            const Prime_Check = (N) => 
+{
+	 if (N < 2) {
+                return "NO";
+              }
+              for (let i = 2; i <= Math.sqrt(N); i++) {
+                if (N % i === 0) {
+                  return "NO";
+                }
+              }
+              return "YES";
+	
+};
+        </pre>
+    <h2>Question 9</h2>
+    <p>Print Numbers</p>
+    <pre>
+            <b>Answer:</b>
+            const printNumbers = (n) => {
+                for(let i=1; i<=n; i++){
+                                console.log(i);
+                              }  
+              };
+        </pre>
+    <h2>Question 10</h2>
+    <p>Print the Table</p>
+    <pre>
+            <b>Answer:</b>
+            const Print_Table = (N) => 
+            {
+                for (let i = 1; i <= 10; i++) {
+                            console.log(N + " * " + i + " = " + N*i);
+                          }
+            };
+        </pre>
+</body>
+
+</html>
